@@ -1,0 +1,73 @@
+.lane {
+  border-radius: 0 5rem;
+  font-family: var(--Font-Family-Overpass);
+  margin-top: 8rem;
+  text-align: center;
+  position: relative;
+  color: var(--White);
+  background: linear-gradient(
+    var(--Very-Dark-Gray-Blue),
+    var(--Very-Dark-Desaturated-Blue)
+  );
+  .lane__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    padding: 0 1rem;
+    background-image: url(../images/bg-pattern-circles.svg);
+    background-size: contain;
+    background-position: center -10rem;
+    background-repeat: no-repeat;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    background-image: url(../images/illustration-phones.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+  }
+}
+.lane__title {
+  font-size: 2rem;
+  padding-top: 7rem;
+  max-width: 400px;
+}
+.lane__description {
+  color: var(--Grayish-Blue);
+  padding: 1rem;
+  line-height: 1.5rem;
+  max-width: 400px;
+}
+@media only screen and (min-width: 650px) {
+  .lane {
+    margin: 0;
+  }
+  .lane::before {
+    left: 0;
+    width: 50%;
+    top: 0;
+    transform: translate(0, -10%);
+  }
+  .lane__title,
+  .lane__description {
+    width: 50%;
+    margin-left: auto;
+    padding: 0;
+    text-align: left;
+    max-width: inherit;
+  }
+  .lane__wrapper {
+    height: 300px !important;
+    background-position: left -15rem !important;
+    background-size: 50% !important;
+  }
+}

@@ -1,0 +1,42 @@
+:root {
+  --Light-Red: hsl(356, 100%, 66%); //(CTA text)
+  --Very-Light-Red: hsl(355, 100%, 74%); //(CTA hover background)
+  --Very-Dark-Blue: hsl(208, 49%, 24%); //(headings)
+  --White: hsl(0, 0%, 100%); //(text)
+  --Grayish-Blue: hsl(240, 2%, 79%); //(footer text)
+  --Grayish-Blue-Menu: hsl(0, 0%, 92%); //(footer text)
+  --Very-Dark-Grayish-Blue: hsl(207, 13%, 34%); //(body copy)
+  --Very-Dark-Black-Blue: hsl(240, 10%, 16%); //(footer background)
+  //Background gradient - Intro/CTA mobile nav:
+  --Very-Light-Red-Gradient: hsl(13, 100%, 72%);
+  --Light-Red-Gradient: hsl(353, 100%, 62%);
+  //Background gradient - body:
+  --Very-Dark-Gray-Blue: hsl(237, 17%, 21%);
+  --Very-Dark-Desaturated-Blue: hsl(237, 23%, 32%);
+
+  --Font-Weight-300: 300;
+  --Font-Weight-400: 400;
+  --Font-Weight-500: 500;
+  --Font-Weight-600: 600;
+  --Font-Weight-700: 700;
+  --Font-Size: 16px;
+
+  --Font-Family-Ubuntu: "Ubuntu", sans-serif;
+  --Font-Family-Overpass: "Overpass", sans-serif;
+}
+body {
+  min-width: 375px;
+  max-width: 1800px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  display: block;
+}

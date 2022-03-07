@@ -1,0 +1,37 @@
+footer {
+  font-family: var(--Font-Family-Ubuntu);
+  padding: 4rem 0 2rem;
+  text-align: center;
+  background-color: var(--Very-Dark-Black-Blue);
+  border-top-right-radius: 6rem;
+}
+.footer__links li {
+  margin: 2.5rem;
+}
+.footer__link {
+  margin: 0.3rem;
+  color: var(--Grayish-Blue);
+}
+.footer__link-1 {
+  font-size: 1.2rem;
+  color: var(--White);
+  margin: 1rem 0;
+}
+@media only screen and (min-width: 650px) {
+  .footer__links {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+  .footer__links li {
+    margin-top: 0;
+  }
+  .footer__link-1 {
+    margin-top: 0;
+  }
+}
