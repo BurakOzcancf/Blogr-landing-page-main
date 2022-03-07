@@ -183,6 +183,9 @@ header .header__arrow-light {
 }
 
 @media only screen and (min-width: 650px) {
+  header {
+    background-size: 150%;
+  }
   .header__close,
   .header__hamburger,
   hr {
@@ -433,7 +436,7 @@ header .header__arrow-light {
   }
   .lane__wrapper {
     height: 300px !important;
-    background-position: left -15rem !important;
+    background-position: left 100% !important;
     background-size: 50% !important;
   }
 }

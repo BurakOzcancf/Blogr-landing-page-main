@@ -115,6 +115,9 @@ header {
   transform: rotate(180deg);
 }
 @media only screen and (min-width: 650px) {
+  header {
+    background-size: 150%;
+  }
   .header__close,
   .header__hamburger,
   hr {
